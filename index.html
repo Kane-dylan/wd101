@@ -1,25 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title >Weather api</title>
+  <title>Form Example</title>
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
+
   <div class="container">
-    <h1>Weather App</h1>
-    <div class="input-container">
-      <input type="text" id="city-input" placeholder="Enter city name">
-      <button id="get-weather-btn">Get Weather</button>
-    </div>
-    <div id="weather-info" class="hidden">
-      <h2 id="city-name"></h2>
-      <p id="temperature"></p>
-      <p id="description"></p>
-    </div>
-    <p id="error-message" class="hidden">City not found ! Please try again</p>
+    <form id="userForm" class="card">
+      <h2>Registration Form</h2>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" required>
+      <label for="password">Password:</label>
+      <input type="password" id="password" required>
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" required>
+      <label for="terms">Accept Terms:</label>
+      <input type="checkbox" id="terms">
+      <button type="submit">Submit</button>
+    </form>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Password</th>
+          <th>Dob</th>
+          <th>Accepted terms?</th>
+        </tr>
+      </thead>
+      <tbody id="userTableBody"></tbody>
+    </table>
   </div>
+
   <script src="index.js"></script>
+
 </body>
+
 </html>
