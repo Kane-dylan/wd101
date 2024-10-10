@@ -1,0 +1,62 @@
+body{
+  background-color: black;
+  color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.container{
+  background-color: #0a0a42;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-radius: 10px;
+  width: 300px;
+}
+
+#city-input {
+  background-color: antiquewhite;
+  border:none;
+  border-radius:10px;
+  padding: 10px;
+  outline: none;
+}
+
+#get-weather-btn{
+  background-color: #d5b68d;
+  border:none;
+  border-radius:5px;
+  padding: 5px 10px;
+}
+
+
+#weather-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+#weather-info p{
+  margin: 0;
+}
+
+#weather-info h2{
+  margin: 0;
+}
+
+.hidden{
+  display: none;
+}
+
+#error-massage{
+  color: red;
+}
+
